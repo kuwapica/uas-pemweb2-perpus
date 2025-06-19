@@ -50,7 +50,7 @@
                                     <td>
                                         @if (!$item->tanggal_kembali)
                                             <a wire:click="kembalikanBuku({{ $item->id }})"
-                                                onclick="return confirm('Yakin ingin mengembalikan buku ini?')"
+                                                wire:confirm="Apakah anda yakin ingin mengembalikan buku ini?"
                                                 class="btn btn-sm btn-warning">
                                                 Kembalikan
                                             </a>
