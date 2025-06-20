@@ -10,7 +10,7 @@
             @endif
             <!-- end flash message -->
 
-            <a class="btn btn-dark mb-2" href="/buku/tambah" wire:navigate>Tambah Buku</a>
+            <a class="btn btn-dark mb-2 " href="/buku/tambah" wire:navigate>Tambah Buku</a>
             <input type="text" wire:model.live.debounce.300ms="search"
                 placeholder="Cari buku berdasarkan judul atau penulis" class="form-control mb-4">
             <div class="card border-0 rounded shadow-sm">

@@ -51,7 +51,7 @@
                                         @if (!$item->tanggal_kembali)
                                             <a wire:click="kembalikanBuku({{ $item->id }})"
                                                 wire:confirm="Apakah anda yakin ingin mengembalikan buku ini?"
-                                                class="btn btn-sm btn-warning">
+                                                class="btn btn-sm btn-outline-warning">
                                                 Kembalikan
                                             </a>
                                         @else

@@ -52,7 +52,7 @@
                                         <a href="anggota/edit/{{ $item->id }}" wire:navigate
                                             class="btn btn-sm btn-primary">Edit</a>
                                         <button wire:click="destroy({{ $item->id }})" class="btn btn-sm btn-danger"
-                                            wire:confirm="Are you sure you want to delete this post?">Hapus</button>
+                                            wire:confirm="Apakah Anda yakin ingin menghapus Anggota ini?">Hapus</button>
                                     </td>
                                 </tr>
                             @empty
