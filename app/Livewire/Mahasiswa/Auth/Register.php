@@ -7,7 +7,7 @@ use Livewire\Component;
 use Livewire\Attributes\Title;
 use Livewire\Attributes\Layout;
 
-#[Layout('components.layouts.auth')]
+#[Layout('layouts.auth')]
 #[Title(('Daftar'))]
 class Register extends Component
 {

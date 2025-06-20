@@ -6,7 +6,9 @@ use App\Models\Anggota;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Livewire\Attributes\Title;
+use Livewire\Attributes\Layout;
 
+#[Layout('layouts.app')]
 #[Title(('Data Anggota'))]
 class Index extends Component
 {

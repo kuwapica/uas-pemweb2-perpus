@@ -5,7 +5,9 @@ namespace App\Livewire\Admin\Peminjaman;
 use Livewire\Component;
 use App\Models\Peminjaman;
 use Livewire\Attributes\Title;
+use Livewire\Attributes\Layout;
 
+#[Layout('layouts.app')]
 #[Title(('Data Peminjaman Buku'))]
 class Index extends Component
 {

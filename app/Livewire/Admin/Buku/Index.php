@@ -6,8 +6,10 @@ use App\Models\Buku;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Livewire\Attributes\Title;
+use Livewire\Attributes\Layout;
 use Illuminate\Console\View\Components\Alert;
 
+#[Layout('layouts.app')]
 #[Title(('Data Buku'))]
 class Index extends Component
 {

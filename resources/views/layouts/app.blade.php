@@ -36,22 +36,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav nav-underline mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('admin.buku') ? 'active' : '' }}"
+                        <a class="nav-link text-white fw-bold {{ request()->routeIs('admin.buku') ? 'active' : '' }}"
                             href="{{ route('admin.buku') }}" wire:navigate>Buku</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('admin.anggota') ? 'active' : '' }}"
+                        <a class="nav-link text-white fw-bold {{ request()->routeIs('admin.anggota') ? 'active' : '' }}"
                             href="{{ route('admin.anggota') }}" wire:navigate>Anggota</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('admin.peminjaman') ? 'active' : '' }}"
+                        <a class="nav-link text-white fw-bold {{ request()->routeIs('admin.peminjaman') ? 'active' : '' }}"
                             href="{{ route('admin.peminjaman') }}" wire:navigate>Peminjaman</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             {{ auth()->user()->name ?? 'Guest' }}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">

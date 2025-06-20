@@ -7,7 +7,9 @@ use App\Models\Buku;
 use Livewire\Component;
 use App\Models\Kategori;
 use Livewire\Attributes\Title;
+use Livewire\Attributes\Layout;
 
+#[Layout('layouts.app')]
 #[Title(('Tambah Buku'))]
 class Create extends Component
 {

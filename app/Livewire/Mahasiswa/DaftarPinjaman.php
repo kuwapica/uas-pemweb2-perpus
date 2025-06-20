@@ -7,7 +7,7 @@ use App\Models\Peminjaman;
 use Livewire\Attributes\Title;
 use Livewire\Attributes\Layout;
 
-#[Layout('components.layouts.mahasiswa')]
+#[Layout('layouts.mahasiswa')]
 #[Title(('Daftar Pinjaman'))]
 class DaftarPinjaman extends Component
 {

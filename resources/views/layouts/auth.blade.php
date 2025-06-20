@@ -27,37 +27,11 @@
 <body class="bg-body-tertiary">
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-            <a href="{{ route('daftarbuku') }}" wire:navigate class="navbar-brand fw-bold">Perpustakaan</a>
+            <a href="/login" wire:navigate class="navbar-brand fw-bold">Perpustakaan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav nav-underline mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('daftarbuku') ? 'active' : '' }}"
-                            href="{{ route('daftarbuku') }}" wire:navigate>Daftar Buku</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('daftarpinjaman') ? 'active' : '' }}"
-                            href="{{ route('daftarpinjaman') }}" wire:navigate>Daftar Pinjaman</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            {{ auth()->user()->nama ?? 'Guest' }}
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <livewire:mahasiswa.auth.logout />
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
